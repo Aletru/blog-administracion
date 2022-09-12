@@ -1,0 +1,416 @@
+@import url("../css/fonts.css");
+
+html,
+body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #fff;
+    --midnight: #E263DB;
+
+    /* gradient color */
+    --grad: linear-gradient(120deg, #E263DB 0%, #db7e32 100%);
+
+    /* theme font-family */
+    --Abel : "Abel", cursive;
+    --Anton: "Anton", cursive;
+    --Josefin: "Josefin", cursive;
+    --lexend: "Lexend", cursive; 
+    --Livvic: "Livvic", cursive; 
+}
+/* ------------- Glovales -------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #34495E;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+.text-gray{
+   
+    color: #34495E;
+}
+h2{
+    font-family: var(--lexend);
+    position: relative;
+    left: 350px;
+}
+
+.pm{
+    font-family: var(--lexend);
+    margin-left: -322px;
+}
+
+.jsp{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    top: 59px;
+    padding-top: 56.25%;
+}
+.responsive{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  height: 100%;
+}
+.rama{
+    position: relative;
+    height: 37px;
+    top: 5px;
+    left: -237px;
+    transform: rotate(35deg);
+}
+
+/*------------------------Contenido-----------------------------*/
+
+
+  .btn-24,
+  .btn-24 *,
+  .btn-24 :after,
+  .btn-24 :before,
+  .btn-24:after,
+  .btn-24:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  .btn-24 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .btn-24:disabled {
+    cursor: default;
+  }
+  .btn-24:-moz-focusring {
+    outline: auto;
+  }
+  .btn-24 svg {
+    display: block;
+    vertical-align: middle;
+  }
+  .btn-24 [hidden] {
+    display: none;
+  }
+  .btn-24 {
+    --background: #000;
+    background: none;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+    top: 14px;
+    height: 48px;
+    left: 6px;
+}
+  .btn-24 span {
+    display: block;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+  .btn-24:after,
+  .btn-24:before {
+    --tilt: 20px;
+    background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: -webkit-clip-path 0.2s ease;
+    transition: clip-path 0.2s ease;
+    transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+    width: 100%;
+    z-index: -1;
+  }
+  .btn-24:after {
+    --thickness: 5px;
+    background: var(--background);
+    height: calc(100% - var(--thickness) * 2);
+    left: var(--thickness);
+    top: var(--thickness);
+    width: calc(100% - var(--thickness) * 2);
+  }
+  .btn-24:hover span {
+    transform: translateX(-20px);
+  }
+  .btn-24:hover:after,
+  .btn-24:hover:before {
+    -webkit-clip-path: polygon(
+      0 0,
+      calc(100% - var(--tilt)) 0,
+      100% 50%,
+      calc(100% - var(--tilt)) 100%,
+      0 100%
+    );
+    clip-path: polygon(
+      0 0,
+      calc(100% - var(--tilt)) 0,
+      100% 50%,
+      calc(100% - var(--tilt)) 100%,
+      0 100%
+    );
+  }
+  
+
+
+/*Contenedor - contenido del articulo*/
+
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 31px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 356px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;    
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+}
+
+
+
+/*Aside de los articulos de relacionados*/
+
+
+/*---------------------------Navegacion----------------------------------*/
+.nav{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 8vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu{
+    justify-content: space-around;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display:flex;
+    justify-content: flex-end;
+    padding: 1.3rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+.collapse{
+    height: 30rem;
+}
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+.nav .nav-items .nav-link:hover{
+    background: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 3.6rem;
+}
+
+/*----------------------------------------------------------------------------*/
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+  
+}
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+footer.footer .newsletter .form-element span{
+    background: var(--grad);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+/* MEDIA */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0 !important;
+    }
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 1020px){
+
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article{
+        box-shadow: 0 0 0 0;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu,
+    .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    .nav .nav-brand a{
+        padding: .8rem 0;
+    }
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+@media only screen and (max-width: 520px){
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+    footer.footer .container > div{
+        padding: 1rem .9rem !important;
+    }
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+}
