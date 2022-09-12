@@ -97,6 +97,16 @@ p{
     transform: rotate(35deg);
 }
 
+.pm{
+    font-family: var(--lexend);
+    margin-left: 26px;
+}
+.pl{
+    font-family: var(--lexend);
+    color: var(--text-light);
+    position: relative;
+    top: -4px;
+}
 /*----Navbar----*/
 .nav{
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
