@@ -112,7 +112,7 @@ p{
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 0 2rem;
     height: 0rem;
-    min-height: 8vh;
+    min-height: 11vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
