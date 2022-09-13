@@ -116,6 +116,9 @@ h2{
 h3{
     font-size: 17px;
 }
+.im{
+    width: 69%;
+}
 /*------------------------Contenido-----------------------------*/
 
 
@@ -285,7 +288,7 @@ article img{
 
 .container-aside aside img{
     width: 79%;
-    margin-bottom: -86px;
+    margin-bottom: -54px;
     position: relative;
     right: -33px;
 }
